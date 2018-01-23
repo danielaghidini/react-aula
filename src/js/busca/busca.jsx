@@ -1,0 +1,29 @@
+import React from 'react';
+
+class Busca extends React.Component {
+    constructor(props) {
+        super(props);
+        this.atualizaBusca = this.atualizaBusca.bind(this);
+        this.onSubmit = this.onSubmit.bind(this);
+    }
+    atualizaBusca(evento) {
+        this.props.atualizaBusca(evento);
+    }
+    onSubmit(evento) {
+        this.props.onSubmit(evento);
+    }
+    render() {
+        return (
+            <form onSubmit={this.onSubmit}>
+                <div className="input-field col s6">
+                    <input type="text" value={this.props.busca} placeholder="Digite sua busca" onChange={this.atualizaBusca} />
+                    <label>Busca</label>
+                </div>
+            </form>
+
+
+        );
+    }
+}
+
+export default Busca;

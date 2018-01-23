@@ -1,5 +1,5 @@
 {
-  "name": "react",
+  "name": "react-aula",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -12,9 +12,15 @@
   "author": "DanielaGhidini",
   "license": "ISC",
   "devDependencies": {
+    "axios": "^0.17.1",
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.1",
     "gulp-react-easy": "^0.1.9",
-    "gulp-rename": "^1.2.2"
+    "gulp-rename": "^1.2.2",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  },
+  "dependencies": {
+    "express": "^4.16.2"
   }
 }
